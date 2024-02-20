@@ -14,6 +14,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    //return $router->app->version();
-    return "Hola Mundo";
+    return $router->app->version();
 });
+
+$router ->get('users', 'UsersController@index');
