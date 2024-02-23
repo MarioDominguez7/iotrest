@@ -23,6 +23,7 @@ class ActuatorsTableSeeder extends Seeder
                 'name' => $faker->unique()->name(),
                 'type' => $faker->randomElement(['Led', 'Motor', 'Rele']),
                 'value' => $faker->randomFloat(0,0,100),
+                'date' => $faker->dateTimeThisYear(),
                 'user_id' => rand(1,11)
             ]);
         }
